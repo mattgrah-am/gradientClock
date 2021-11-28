@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "digital-7";
+    src: url("./assets/digital-7.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "digital-7";
+    display: grid;
+    place-content: center;
+    animation: animateBg 10s linear infinite;
+    background-image: linear-gradient(
+        0deg,
+        #cf5c5c,
+        #c19b4a,
+        #def2a0,
+        #c6ee4a,
+        #42eca6,
+        #64b3d9,
+        #208ea2,
+        #498ada,
+        #5b73df,
+        #897ed3,
+        #cf5c5c,
+        #c19b4a
+    );
+    background-size: 1000% 1000%;
+    height: 100vh;
+}
+@keyframes animateBg {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+main {
+    text-align: center;
+    color: #fff;
+    background-color: hsla(0, 0%, 0%, 75%);
+    border-radius: 5rem;
+    box-shadow: 0px 1px 15px hsl(0, 0%, 0%);
+    width: 65rem;
+}
+
+#clock {
+    font-size: 20rem;
+}
+
+#date {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
