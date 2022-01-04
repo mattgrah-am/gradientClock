@@ -18,7 +18,7 @@ const month = [
 const date = new Date();
 const currentDay = day[date.getDay()];
 const currentDate = dateConv(date.getDate());
-const currentMonth = month[date.getMonth() - 1];
+const currentMonth = month[date.getMonth()];
 const currentYear = date.getFullYear();
 
 function dateConv(num) {
